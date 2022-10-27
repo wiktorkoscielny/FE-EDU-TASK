@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <body>
+        <!-- add container inside header above header panel only if freeshipping is active -->
+        <referenceContainer name="header.container">
+            <block ifconfig="carriers/freeshipping/active" class="Magento\Framework\View\Element\Template" name="customblock" before="header.panel.wrapper" template="Magento_Theme::custom.phtml" />
+        </referenceContainer>
+
+        <!-- move subscribe form from footer to the bottom of main content -->
+        <move element="form.subscribe" destination="footer-container" before="-" />
+
+        <!-- override newsleter container-->
+        <referenceContainer name="footer">
+            <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe" as="subscribe" before="-" template="Magento_Theme::subscribe.phtml" ifconfig="newsletter/general/active" />
+        </referenceContainer>
+
+    </body>
+
+</page>
