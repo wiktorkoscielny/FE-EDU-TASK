@@ -17,4 +17,5 @@
 ![image](https://user-images.githubusercontent.com/81425551/198513116-56aa95d8-2574-4910-86e7-7595bbeebd68.png)
 ![image](https://user-images.githubusercontent.com/81425551/198513132-184971db-1de0-43af-9159-010cc13bd030.png)
 ![image](https://user-images.githubusercontent.com/81425551/198513139-958318b2-f5f5-4a86-b8ed-f0b1845e5f3b.png)
-![Link to the video](https://www.loom.com/share/d7e39339288f4827b2de186c1c9aefb9)
+ Remove confirmation popup when deleting products from minicart - link to the video:
+  https://www.loom.com/share/d7e39339288f4827b2de186c1c9aefb9
