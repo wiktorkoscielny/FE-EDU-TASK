@@ -18,13 +18,8 @@
             </container>
         </referenceContainer>
 
-        <!-- move subscribe form from footer to the bottom of main content -->
-        <move element="form.subscribe" destination="footer-container" before="-" />
-
-        <!-- override newsleter container-->
-        <referenceContainer name="footer">
-            <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe" as="subscribe" before="-" template="Magento_Theme::subscribe.phtml" ifconfig="newsletter/general/active" />
-        </referenceContainer>
+        <!-- move subscribe form from footer to the bottom of main container -->
+        <move element="form.subscribe" destination="page.bottom.container" />
 
     </body>
 

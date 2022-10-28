@@ -1,12 +1,3 @@
-<?php
-/**
- * override original subscribe.phtml file
- */
-
-/** @var \Magento\Newsletter\Block\Subscribe $block */
-
-?>
-
 <div class="block newsletter" style='text-align: center; margin-left: auto; margin-right: auto;'>
     <div class="title"><strong><?=$block->escapeHtml(__('Newsletter'))?></strong></div>
     <div class="content">
@@ -27,6 +18,7 @@
                                placeholder="<?=$block->escapeHtml(__('Email adress'))?>"
                                data-mage-init='{"mage/trim-input":{}}'
                                data-validate="{required:true, 'validate-email':true}"
+                               style="width: 200%;"
                         />
                     </label>
                 </div>
@@ -42,12 +34,3 @@
         </form>
     </div>
 </div>
-<script type="text/x-magento-init">
-    {
-        "*": {
-            "Magento_Customer/js/block-submit-on-send": {
-                "formId": "newsletter-validate-detail"
-            }
-        }
-    }
-</script>
