@@ -10,7 +10,7 @@
 
         <!-- Remove “Related Products” block from Grouped Product-->
 
-        <referenceBlock name="product.info.sku" remove="true" />
+        <referenceBlock name="content.aside" remove="true" />
 
     </body>
 
