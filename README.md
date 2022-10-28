@@ -21,3 +21,6 @@ Moved form.subscribe out of footer container, change the place where "subscribe.
 3. Change #3
 Removed related products from Grouped Product Details Page, I have also moved the "catalog_product_view_type..." files to correct path following the instructions included in the feedback.
 
+4. Change #4
+I tried to do correct mixin, not sure if files are in correct path.
+
