@@ -14,4 +14,7 @@
 Separate div above header
 ![fix1](https://user-images.githubusercontent.com/81425551/198561608-9f92c721-bb09-4267-b58e-f1038f40989a.png)
 
+2. Change #2
+Moved form.subscribe out of footer container, change the place where "subscribe.phtml" was placed.
+![fix2](https://user-images.githubusercontent.com/81425551/198569502-6ad515e3-753d-4e38-abd1-639b21357e81.png)
 
