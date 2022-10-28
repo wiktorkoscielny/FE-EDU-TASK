@@ -4,8 +4,18 @@
 
     <body>
         <!-- add container inside header above header panel only if freeshipping is active -->
-        <referenceContainer name="header.container">
-            <block ifconfig="carriers/freeshipping/active" class="Magento\Framework\View\Element\Template" name="customblock" before="header.panel.wrapper" template="Magento_Theme::custom.phtml" />
+
+        <referenceContainer name="page.wrapper">
+            <container
+                name="container-above-header"
+                as="container-above-header"
+                before="header.container"
+                label="Page Custom-Content"
+                htmlTag="div"
+                htmlClass="container-above-header"
+            >
+                <block ifconfig="carriers/freeshipping/active" class="Magento\Framework\View\Element\Template" name="new-block" template="Magento_Theme::custom.phtml" />
+            </container>
         </referenceContainer>
 
         <!-- move subscribe form from footer to the bottom of main content -->
