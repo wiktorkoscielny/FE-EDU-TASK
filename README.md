@@ -18,3 +18,6 @@ Separate div above header
 Moved form.subscribe out of footer container, change the place where "subscribe.phtml" was placed.
 ![fix2](https://user-images.githubusercontent.com/81425551/198569502-6ad515e3-753d-4e38-abd1-639b21357e81.png)
 
+3. Change #3
+Removed related products from Grouped Product Details Page, I have also moved the "catalog_product_view_type..." files to correct path following the instructions included in the feedback.
+
