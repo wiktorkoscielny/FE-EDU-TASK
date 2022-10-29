@@ -21,6 +21,6 @@ Moved form.subscribe out of footer container, change the place where "subscribe.
 3. Change #3
 Removed related products from Grouped Product Details Page, I have also moved the "catalog_product_view_type..." files to correct path following the instructions included in the feedback.
 
-4. Change #4
+4. Change #4v1
 Mixin is working fine hope I did it the way it is supposed to be done (I referred to the following [documentation](https://developer.adobe.com/commerce/frontend-core/javascript/mixins/), not sure if the files are in the correct path.
 
