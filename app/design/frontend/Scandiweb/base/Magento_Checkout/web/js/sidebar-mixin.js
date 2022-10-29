@@ -13,7 +13,7 @@ define([
 ], function ($, authenticationPopup, customerData, alert, confirm, _) {
     "use strict";
 
-    var sidebarWidgetMixin = {
+    var sidebarMixin = {
         _initContent: function () {
             var self = this,
                 events = {};
@@ -57,23 +57,11 @@ define([
 
             /**
              * @param {jQuery.Event} event
+             * overriding original funtion to disable minicart remove product confirmation popup?
              */
-            events["click " + this.options.button.remove] = function (event) {
+             events['click ' + this.options.button.remove] =  function (event) {
                 event.stopPropagation();
-                confirm({
-                    content: self.options.confirmMessage,
-                    actions: {
-                        /** @inheritdoc */
-                        confirm: function () {
-                            self._removeItem($(event.currentTarget));
-                        },
-
-                        /** @inheritdoc */
-                        always: function (e) {
-                            e.stopImmediatePropagation();
-                        },
-                    },
-                });
+                self._removeItem($(event.currentTarget));
             };
 
             /**
@@ -110,6 +98,7 @@ define([
         },
     };
     return function (targetWidget) {
-        return targetWidget.extend(sidebarWidgetMixin);
+        $.widget('mage.sidebar', targetWidget, sidebarMixin);
+        return $.mage.sidebar;
     };
 });
