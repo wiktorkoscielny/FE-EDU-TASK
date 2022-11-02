@@ -10,7 +10,7 @@
 
         <!-- Remove “Related Products” block from Grouped Product-->
 
-        <referenceBlock name="content.aside" remove="true" />
+        <referenceBlock name="catalog.product.related" remove="true" />
 
     </body>
 

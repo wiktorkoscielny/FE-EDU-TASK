@@ -14,7 +14,7 @@
                 htmlTag="div"
                 htmlClass="container-above-header"
             >
-                <block ifconfig="carriers/freeshipping/active" class="Magento\Framework\View\Element\Template" name="new-block" template="Magento_Theme::custom.phtml" />
+                <block ifconfig="carriers/freeshipping/active" class="Magento\Framework\View\Element\Template" name="new-block" template="Magento_Theme::html/custom.phtml" />
             </container>
         </referenceContainer>
 
