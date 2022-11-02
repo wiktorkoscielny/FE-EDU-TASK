@@ -10,17 +10,8 @@
 
 ## code changes
 
-1. Change #1
-Separate div above header
-![fix1](https://user-images.githubusercontent.com/81425551/198561608-9f92c721-bb09-4267-b58e-f1038f40989a.png)
+1. Fixed task 2
+- changed the layout directory,
 
-2. Change #2
-Moved form.subscribe out of footer container, change the place where "subscribe.phtml" was placed.
-![fix2](https://user-images.githubusercontent.com/81425551/198569502-6ad515e3-753d-4e38-abd1-639b21357e81.png)
-
-3. Change #3
-Removed related products from Grouped Product Details Page, I have also moved the "catalog_product_view_type..." files to correct path following the instructions included in the feedback.
-
-4. Change #4v1
-Mixin is working fine hope I did it the way it is supposed to be done (I referred to the following [documentation](https://developer.adobe.com/commerce/frontend-core/javascript/mixins/), not sure if the files are in the correct path.
-
+2. Fixed task 5
+- chagned reference block which I am removing.
